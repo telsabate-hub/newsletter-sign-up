@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background: hsl(234, 29%, 20%);
+  color: hsl(234, 29%, 20%);
+}
+
+section {
+  background: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  margin: auto;
+  width: 930px;
+  border-radius: 2rem;
+}
+
+.form-container {
+  padding: 40px;
+}
+
+.illustration-sign-up-desktop {
+  width: 46%;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+form {
+  padding-top: 20px;
+}
+
+ul {
+  padding: 20px 0;
+}
+
+p {
+  line-height: 1.4;
+}

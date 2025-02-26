@@ -1,0 +1,19 @@
+$primary_red: hsl(4, 100%, 67%);
+$neutral_blue_800: hsl(234, 29%, 20%);
+$neutral_blue_700: hsl(235, 18%, 26%);
+$neutral_grey: hsl(0, 0%,58%);
+$neutral_white: hsl(0, 0%, 100%);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background: $neutral_blue_800;
+    color: $neutral_blue_800;
+}
