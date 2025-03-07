@@ -45,3 +45,17 @@ ul {
 p {
   line-height: 1.4;
 }
+
+button {
+  color: hsl(0, 0%, 100%);
+  background: hsl(234, 29%, 20%);
+  font-family: "Roboto", serif;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 20px;
+  border: none;
+  width: 100%;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+}

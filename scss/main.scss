@@ -33,3 +33,17 @@ ul {
 p {
     line-height: 1.4;
 }
+
+button {
+    color: $neutral_white;
+    background: $neutral_blue_800;
+    font-family: "Roboto", serif;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 20px;
+    border: none;
+    width: 100%;
+    line-height: 1.1;
+    letter-spacing: .5px;
+}
