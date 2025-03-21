@@ -12,6 +12,10 @@ body {
   color: hsl(234, 29%, 20%);
 }
 
+main {
+  margin: 220px 0;
+}
+
 section {
   background: hsl(0, 0%, 100%);
   display: flex;
@@ -36,10 +40,23 @@ h1 {
 
 form {
   padding-top: 20px;
+  padding-right: 20px;
 }
 
 ul {
   padding: 20px 0;
+  list-style-image: url("../assets/images/icon-list.svg");
+  list-style-position: inside;
+}
+
+li {
+  padding: 5px 0;
+}
+
+li span {
+  padding-left: 10px;
+  position: relative;
+  top: -5px;
 }
 
 p {
@@ -58,4 +75,20 @@ button {
   width: 100%;
   line-height: 1.1;
   letter-spacing: 0.5px;
+}
+
+label {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+input[type=email] {
+  display: block;
+  margin: 10px 0 20px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 18px;
+  border: 1px solid hsl(0, 0%, 58%);
+  color: hsl(0, 0%, 58%);
+  font-size: 1rem;
 }

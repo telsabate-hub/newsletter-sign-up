@@ -1,5 +1,9 @@
 @import './config';
 
+main {
+    margin: 220px 0;
+}
+
 section {
     background: $neutral_white;
     display: flex;
@@ -24,10 +28,23 @@ h1 {
 
 form {
     padding-top: 20px;
+    padding-right: 20px;
 }
 
 ul {
     padding: 20px 0;
+    list-style-image: url('../assets/images/icon-list.svg');
+    list-style-position: inside;
+}
+
+li {
+    padding: 5px 0;
+}
+
+li span {
+    padding-left: 10px;
+    position: relative;
+    top: -5px;
 }
 
 p {
@@ -46,4 +63,20 @@ button {
     width: 100%;
     line-height: 1.1;
     letter-spacing: .5px;
+}
+
+label {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+input[type=email] {
+    display: block;
+    margin: 10px 0 20px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 18px;
+    border: 1px solid $neutral_grey;
+    color: $neutral_grey;
+    font-size: 1rem;
 }
