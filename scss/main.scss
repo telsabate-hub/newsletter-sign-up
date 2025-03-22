@@ -77,6 +77,22 @@ input[type=email] {
     border-radius: 8px;
     padding: 18px;
     border: 1px solid $neutral_grey;
-    color: $neutral_grey;
+    color: $neutral_blue_800;
     font-size: 1rem;
+}
+
+#emailField.error {
+    border: 1px solid $primary_red;
+    color: $primary_red;
+    background: hsl(4deg 100% 67% / 15%);
+}
+
+#submitBtn.active {
+    background-image: linear-gradient(to right, #ff5476, hsl(4, 100%, 67%));
+}
+
+.error-msg {
+    float: right;
+    padding-top: 4px;
+    color: $primary_red;
 }
