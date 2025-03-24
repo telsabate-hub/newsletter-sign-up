@@ -1,26 +1,25 @@
 const email = document.getElementById( "emailField" );
 const form = document.getElementById( "form" );
 const submitBtn = document.getElementById( "submitBtn" );
+const dismissBtn = document.getElementById( "dismissBtn" );
 const errorMsg = document.getElementById( "errorMsg" );
-
-submitBtn.addEventListener( "mousedown", function(e){
-    this.classList.add( "active" );
-});
-
-submitBtn.addEventListener( "mouseup", function(e){
-    this.classList.remove( "active" );
-});
+const formSection = document.getElementById( "formSection" );
+const successSection = document.getElementById( "successSection" );
+const confirmationEmail = document.getElementById( "confirmationEmail" );
 
 function validateEmail(e) {
     e.preventDefault();
-
+    
     if (!email.checkValidity()) {
         email.classList.add( "error" );
         errorMsg.removeAttribute( "hidden" );
         return false;
     } else {
         email.classList.remove( "error" );
-        errorMsg.setAttribute( "hidden", "" );
+        errorMsg.setAttribute( "hidden", "" ); 
+        formSection.style.display = "none";
+        confirmationEmail.innerHTML = email.value;
+        successSection.style.display = "flex";
         return true;
     }
 }
@@ -45,7 +44,24 @@ function submitBtnKeyupListener(e) {
     }
 }
 
+submitBtn.addEventListener( "mousedown", function(e){
+    this.classList.add( "active" );
+});
+
+submitBtn.addEventListener( "mouseup", function(e){
+    this.classList.remove( "active" );
+});
+
+dismissBtn.addEventListener( "mousedown", function(e){
+    this.classList.add( "active" );
+});
+
+dismissBtn.addEventListener( "mouseup", function(e){
+    this.classList.remove( "active" );
+});
+
 form.addEventListener( "submit", validateEmail );
 email.addEventListener( "click", emailClickListener );
 email.addEventListener( "keyup", emailKeyupListener );
 submitBtn.addEventListener( "keyup", submitBtnKeyupListener );
+dismissBtn.addEventListener( "click", function(e){ location.reload(); });

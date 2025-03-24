@@ -18,7 +18,7 @@
 </head>
 <body>
   <main>
-    <section>
+    <section class="form-section" id="formSection">
       <div class="form-container">
         <h1>Stay updated!</h1>
         <form id="form" novalidate>
@@ -40,11 +40,14 @@
         </form>
       </div>
       <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" class="illustration-sign-up-desktop"/>
-      <div hidden>
+    </section>
+    <section class="subscription-success-section" id="successSection">
+      <img src="./assets/images/icon-success.svg" alt="" class="icon-success"/>
+      <div>
         <h1>Thanks for subscribing!</h1>
-        <p>A confirmation email has been sent to ash@loremcompany.com. 
+        <p>A confirmation email has been sent to <span id="confirmationEmail"></span>. 
           Please open it and click the button inside to confirm your subscription.</p>
-        <button>Dismiss message</button>
+        <button id="dismissBtn">Dismiss message</button>
       </div>
     </section>
   </main>

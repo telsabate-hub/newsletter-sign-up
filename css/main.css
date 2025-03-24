@@ -99,7 +99,7 @@ input[type=email] {
   background: hsla(4, 100%, 67%, 0.15);
 }
 
-#submitBtn.active {
+button.active {
   background-image: linear-gradient(to right, #ff5476, hsl(4, 100%, 67%));
 }
 
@@ -107,4 +107,29 @@ input[type=email] {
   float: right;
   padding-top: 4px;
   color: hsl(4, 100%, 67%);
+}
+
+.subscription-success-section {
+  display: none;
+  flex-direction: column;
+  width: 505px;
+  padding: 50px 64px 64px;
+}
+
+.icon-success {
+  width: 60px;
+}
+
+.subscription-success-section h1 {
+  padding: 40px 0 24px;
+  line-height: 1;
+}
+
+.subscription-success-section p {
+  padding-bottom: 41px;
+  line-height: 1.45;
+}
+
+#confirmationEmail {
+  font-weight: 700;
 }
