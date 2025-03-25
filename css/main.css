@@ -27,7 +27,7 @@ section {
 }
 
 .form-container {
-  padding: 40px;
+  padding: 65px 40px 40px 40px;
 }
 
 .illustration-sign-up-desktop {
@@ -48,7 +48,7 @@ form {
 }
 
 ul {
-  padding: 20px 0;
+  padding: 20px 0 30px;
   list-style-image: url("../assets/images/icon-list.svg");
   list-style-position: inside;
 }
