@@ -22,8 +22,12 @@ section {
     width: 46%;
 }
 
+.illustration-sign-up-mobile {
+    display: none;
+}
+
 h1 {
-    font-size: 56px;
+    font-size: 3.5rem;
 }
 
 form {
@@ -121,3 +125,5 @@ button.active {
 #confirmationEmail {
     font-weight: 700;
 }
+
+@import './mobile';
